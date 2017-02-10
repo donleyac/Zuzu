@@ -111,7 +111,7 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
-          /\.svg$/,
+          /\.(png|jpg|svg)$/,
           /\.scss$/
         ],
         loader: 'url',
@@ -149,6 +149,8 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
+
+      // Backup url loader{ test: /\.(svg|png|jpg)$/, loader: 'url-loader?limit=10000' }
       // "file" loader for svg
       {
         test: /\.(png|jpg|svg)$/,

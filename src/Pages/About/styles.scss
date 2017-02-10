@@ -1,29 +1,70 @@
 $color1: #559167; //Green
 $color2: white;
 $color3: #00c3f4; //blue
+$dkcolor3: #1daad1; //dark blue
+$color4:#dbdbdb; //grey accent
+$outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
 .about {
-  .main_img {
+  .emph {
+    color: $color1;
+    font-weight: 600;
+  }
+  .menu-button{
+    display: inline-flex;
+    margin: 15px;
+    border-radius: 25px;
+    background: $color3;
+    padding: 10px;
+    color: $color2;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      background: $dkcolor3;
+    }
+  }
+  .full {
     height: 100vh;
+  }
+  .top {
     background-image: url(./assets/main_salad.jpg);
-    background-color: rgba(0, 0, 0, 0.3);
     background-position: center center; //vert&horz centered
     background-repeat: no-repeat; //no tiling
     background-attachment: fixed; //page>image it doesn't move
     background-size: cover; //scales background to container
     //Inner Content
     display: flex;
-    justify-content: center;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     p {
+      text-transform: uppercase;
       font-size: 85px;
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       color: $color2;
-      //text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
-    }
+      text-shadow: $outline;
+      }
+      .scroll-toggle {
+        background: rgba(0, 0, 0, .6);
+        align-self: flex-end;
+        cursor: pointer;
+        &:hover {
+          background: rgba(0, 0, 0, .8);
+        }
+        i {
+          color: $color2;
+          text-shadow: $outline;
+          font-size: 50px;
+        }
+      }
   }
-  .bottom {
-    height: 50vh;
-    background: #fbffe5;
+  .container {
+    text-align: center;
+  }
+  .box {
+    width: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    padding: 15px;
   }
 }
