@@ -1,6 +1,28 @@
 .banner {
+  $color4:#dbdbdb; //grey accent
+  $outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
   background-position: center center; //vert&horz centered
   background-repeat: no-repeat; //no tiling
   background-size: cover; //scales background to container
-  height: 350px;
+  height: 70vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    padding-left: 20px;
+    font-weight: 300;
+    color: white;
+    text-shadow: $outline;
+  }
+  .name {
+    font-size: 70px;
+    letter-spacing: 3px;
+  }
+  .info *{
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 }

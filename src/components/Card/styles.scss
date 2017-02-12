@@ -1,0 +1,31 @@
+$color1: #559167; //Green
+$color2: white;
+$color3: #00c3f4; //blue
+$dkcolor3: #1daad1; //dark blue
+$color4:#dbdbdb; //grey accent
+$outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
+$color5: rgba(236,236,234,0.95); //offwhite-grey
+$color5-lighter: rgba(236,236,234,0.60);
+$color6: #555555; //offblack
+.card {
+  width: 380px;
+  height: 490px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 15px;
+  border: 1px solid $color5-lighter;
+  &:hover {
+    border: 1px solid $color3;
+    h1 {
+      color: $color3;
+    }
+  }
+  .card-image {
+    background-position: center center; //vert&horz centered
+    background-repeat: no-repeat; //no tiling
+    background-size: cover; //scales background to container
+    height: 60%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+}

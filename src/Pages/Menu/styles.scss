@@ -1,6 +1,39 @@
+$color1: #559167; //Green
+$color2: white;
+$color3: #00c3f4; //blue
+$dkcolor3: #1daad1; //dark blue
+$color4:#dbdbdb; //grey accent
+$outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
+$color5: rgba(236,236,234,0.95); //offwhite-grey
+$color6: #555555; //offblack
 .menu {
-  background-position: center center; //vert&horz centered
-  background-repeat: no-repeat; //no tiling
-  background-size: cover; //scales background to container
-  height: 200px;
+  .subheader {
+    background-color: $color5;
+    border-bottom: $color4 1px solid;
+    a {
+      padding: 10px;
+      text-transform: uppercase;
+      color: $color6;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+  .menu-content {
+    padding: 15px;
+    text-align: center;
+    color: $color6;
+    .row {
+      justify-content: flex-start;
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
 }

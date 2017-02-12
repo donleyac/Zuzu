@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 import './styles.scss'
 
 import main_img from './assets/main_salad.jpg';
@@ -28,7 +29,7 @@ export default function(props){
               sagittis id sit amet metus.</p>
           <p className="emph">Nam mollis massa ligula, eget pharetra ipsum vulputate vulputate.</p>
         </div>
-        <a className="menu-button" href="/menu">View Our Menu</a>
+        <Link className="menu-button" to="/menu">View Our Menu</Link>
         <div className="row">
           <img className="box" src={row_img1}/>
           <img className="box" src={row_img2}/>
