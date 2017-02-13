@@ -4,9 +4,9 @@ import './styles.scss';
 
 function ListLink(props){
   return (
-    <li><IndexLink activeClassName="active" to={props.to}>
+    <IndexLink activeClassName="active" to={props.to}>
       {props.info}
-    </IndexLink></li>
+    </IndexLink>
   )
 }
 export default function(props) {
@@ -15,13 +15,13 @@ export default function(props) {
         <nav className="navbar">
           <nav className="wrapper">
             <IndexLink to="/"><div className="logo"></div></IndexLink>
-            <input type="checkbox" id="menu-toggle" />
-            <label htmlFor="menu-toggle" className="label-toggle"/>
-            <ul>
-              <ListLink to="/" info="About"/>
-              <ListLink to="/menu" info="Menu"/>
-              {/* <ListLink to="/gallery" info="Gallery"/> */}
-            </ul>
+            <span className="overflow">
+              <div className="overflow-btn" />
+              <div className="overflow-content">
+                <ListLink to="/" info="About"/>
+                <ListLink to="/menu" info="Menu"/>
+              </div>
+            </span>
           </nav>
         </nav>
       {props.children}

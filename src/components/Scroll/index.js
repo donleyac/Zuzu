@@ -36,7 +36,7 @@ var Scroll = React.createClass({
     return (
       <span className={inputClass}>
         {this.props.to?(
-          <Link activeClass="active" to={this.props.to} spy={true} smooth={true} offset={-66} duration={700}>
+          <Link activeClass="active" to={this.props.to} spy={true} smooth={true} offset={-65} duration={700}>
             {this.props.children}
           </Link>): null}
       </span>
