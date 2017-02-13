@@ -13,19 +13,27 @@ $color6: #555555; //offblack
     a {
       padding: 10px;
       text-transform: uppercase;
-      color: $color6;
+      color: $color1;
       font-size: 13px;
       font-weight: 300;
       letter-spacing: 2px;
     }
+    a:hover {
+      cursor: pointer;
+      color: $color3;
+    }
+    a.active {
+      color: $color3;
+    }
+   &.fixed {
+     position: fixed;
+     top: 50px;
+   }
   }
   .menu-content {
     padding: 15px;
     text-align: center;
     color: $color6;
-    .row {
-      justify-content: flex-start;
-    }
     h1 {
       font-weight: 300;
       font-size: 20px;
@@ -34,6 +42,23 @@ $color6: #555555; //offblack
     p {
       font-weight: 300;
       font-size: 12px;
+    }
+  }
+  .card-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    * {
+      padding: 10px 5px 5px 20px;
+      margin: 0px;
+    }
+    p {
+      font-size: 12px;
+      text-align: left;
+    }
+    .price {
+      color: black;
     }
   }
 }

@@ -3,7 +3,7 @@ $color2: white;
 $color3: #00c3f4; //blue
 .navbar {
   background-color: $color2;
-  opacity: .9;
+  opacity: .95;
   position: fixed;
   min-width: 100%;
   text-transform: uppercase;
@@ -28,10 +28,11 @@ $color3: #00c3f4; //blue
   //Page Links
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style-type: none;
     width: 50%;
     li  {
+      padding: 0px 10px 0px 10px;
       display: inline-block;
     }
     a {
@@ -44,6 +45,12 @@ $color3: #00c3f4; //blue
     }
   }
   @media screen and (max-width: 768px) {
+      .wrapper {
+        height: 50px;
+      }
+      .logo{
+        margin-top: 2px;
+      }
       ul {
         background-color: $color1;
         //Todo display none, use react animations
@@ -53,7 +60,8 @@ $color3: #00c3f4; //blue
         opacity: 0;
         text-align: center;
         transition: all 1s ease;
-        width: 100%;
+        width: 70%;
+        margin: auto;
         visibility: hidden;
         padding: 0px; //Override weird user left padding
         li {
@@ -61,7 +69,7 @@ $color3: #00c3f4; //blue
           color: $color2;
           display: block;
           font-size: 1.5em;
-          padding: 4vh;
+          padding: 20px;
           a {
             color: $color2;
           }
@@ -69,16 +77,16 @@ $color3: #00c3f4; //blue
       }
       #menu-toggle:checked ~ ul {
         opacity: 1;
-        height: 55vh;
+        height: 140px;
         visibility: visible;
       }
       .label-toggle {
         background: linear-gradient(to bottom, $color1 0%, $color1 20%, transparent 20%, transparent 40%, $color1 40%, $color1 60%, transparent 60%, transparent 80%, $color1 80%, $color1 100%); //Gradient Hamburger
         cursor: pointer;
+        margin-top: 7px;
         display: block;
         float: right;
         height: 35px;
-        margin-top: 1em;
         width: 35px;
       }
       .wrapper {display: block;}

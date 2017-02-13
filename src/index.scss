@@ -30,3 +30,8 @@ p,a, h1 {
   justify-content: center;
   flex-flow: row wrap;
 }
+.background-img {
+  background-position: center center; //vert&horz centered
+  background-repeat: no-repeat; //no tiling
+  background-size: cover; //scales background to container
+}

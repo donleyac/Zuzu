@@ -1,12 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {IndexLink} from 'react-router';
 import './styles.scss';
 
 function ListLink(props){
   return (
-    <li><Link activeClassName="active" to={props.to}>
+    <li><IndexLink activeClassName="active" to={props.to}>
       {props.info}
-    </Link></li>
+    </IndexLink></li>
   )
 }
 export default function(props) {
@@ -14,14 +14,13 @@ export default function(props) {
       <div>
         <nav className="navbar">
           <nav className="wrapper">
-            <div className="logo"></div>
+            <IndexLink to="/"><div className="logo"></div></IndexLink>
             <input type="checkbox" id="menu-toggle" />
             <label htmlFor="menu-toggle" className="label-toggle"/>
             <ul>
               <ListLink to="/" info="About"/>
               <ListLink to="/menu" info="Menu"/>
-              <ListLink to="/gallery" info="Gallery"/>
-              <ListLink to="/contact" info="Contact"/>
+              {/* <ListLink to="/gallery" info="Gallery"/> */}
             </ul>
           </nav>
         </nav>
