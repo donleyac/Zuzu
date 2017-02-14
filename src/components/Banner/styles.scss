@@ -1,6 +1,5 @@
+@import '../../_colors.scss';
 .banner {
-  $color4:#dbdbdb; //grey accent
-  $outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
   background-position: center center; //vert&horz centered
   background-repeat: no-repeat; //no tiling
   background-size: cover; //scales background to container

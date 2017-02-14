@@ -1,9 +1,4 @@
-$color1: #559167; //Green
-$color2: white;
-$color3: #00c3f4; //blue
-$dkcolor3: #1daad1; //dark blue
-$color4:#dbdbdb; //grey accent
-$outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
+@import '../../_colors.scss';
 .about {
   .emph {
     color: $color1;
@@ -21,9 +16,6 @@ $outline: -.5px 0 $color4, 0 .5px $color4, .5px 0 $color4, 0 -.5px $color4;
     &:hover {
       background: $dkcolor3;
     }
-  }
-  .full {
-    height: 100vh;
   }
   .top {
     background-image: url(./assets/main_salad.jpg);

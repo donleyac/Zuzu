@@ -1,6 +1,4 @@
-$color1: #559167; //Green
-$color2: white;
-$color3: #00c3f4; //blue
+@import '../../_colors.scss';
 .navbar {
   background-color: $color2;
   opacity: .95;
