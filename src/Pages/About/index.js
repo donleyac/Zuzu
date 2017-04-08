@@ -23,16 +23,11 @@ export default function(props){
       <div id="container" className="container">
         <div className="text-block">
           <p className="emph">Nam mollis massa ligula, eget pharetra ipsum vulputate vulputate.</p>
-          <p>Curabitur ut sapien consectetur,
-            tempor erat congue, volutpat eros. Maecenas ligula urna,
-             ultrices a rutrum vitae, scelerisque eget leo. Pellentesque
-              sapien tortor, dapibus ut facilisis et, vehicula et lacus.
-              Nullam ante mi, tempor in consequat at, tincidunt eu nunc.
-              Sed quis tristique erat. Etiam mollis leo vel ipsum venenatis,
-              et pharetra purus aliquet. Vestibulum finibus nisi at nisi
-              scelerisque tempor. Nunc vitae libero condimentum, ultricies
-              libero in, blandit dolor. Duis vitae tellus nec orci tempus
-              sagittis id sit amet metus.</p>
+          <p>Zuzu Cuisine’s menu contains an extensive selection of Mediterranean Cuisine that offers a
+            perfect balance of both flavor and nutrition. Our goal is to create a farm to table experience, that
+            will combine the freshest ingredients with authentic family recipes passed down from generation
+            to generation. A few of Zuzu Cuisine’s menu items will be seasonal to ensure the highest quality
+            standards, while also bringing the best flavors nature can provide.</p>
           <p className="emph">Nam mollis massa ligula, eget pharetra ipsum vulputate vulputate.</p>
         </div>
         <Link className="menu-button" to="/menu">View Our Menu</Link>
