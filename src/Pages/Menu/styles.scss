@@ -54,4 +54,30 @@
       color: black;
     }
   }
+  .protein-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    .protein-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      .protein-card {
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+      }
+      .protein-descrip {
+        color: $color6;
+        font-weight: 300;
+        font-size: 14px;
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
 }

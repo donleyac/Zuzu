@@ -22,13 +22,13 @@ export default function(props){
       </div>
       <div id="container" className="container">
         <div className="text-block">
-          <p className="emph">Nam mollis massa ligula, eget pharetra ipsum vulputate vulputate.</p>
+          <p className="emph">Taste the flavors of the Mediterranean</p>
           <p>Zuzu Cuisine’s menu contains an extensive selection of Mediterranean Cuisine that offers a
             perfect balance of both flavor and nutrition. Our goal is to create a farm to table experience, that
             will combine the freshest ingredients with authentic family recipes passed down from generation
             to generation. A few of Zuzu Cuisine’s menu items will be seasonal to ensure the highest quality
             standards, while also bringing the best flavors nature can provide.</p>
-          <p className="emph">Nam mollis massa ligula, eget pharetra ipsum vulputate vulputate.</p>
+          <p className="emph">Feel happy and healthy.</p>
         </div>
         <Link className="menu-button" to="/menu">View Our Menu</Link>
         <div className="row">

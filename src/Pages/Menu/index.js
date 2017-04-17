@@ -13,6 +13,7 @@ import cardImg2 from '../About/assets/md_bread.jpg';
 import cardImg3 from '../About/assets/md_fig.jpg';
 import cardImg4 from '../About/assets/md_salmon.jpg';
 
+
 function CardInfo(props){
   return(
     <div className="card-info">
@@ -23,46 +24,71 @@ function CardInfo(props){
   )
 }
 
+function ProteinCard(props){
+  let bgStyle={backgroundImage: 'url(' + props.image + ')'};
+  return (
+    <div className="protein-container">
+      <p className="protein-label">{props.label}</p>
+      <div className="protein-card" style={bgStyle} />
+      <p className="protein-descrip">{props.descrip}</p>
+    </div>
+  )
+}
+
+var proteinArray = [
+  {
+    label:"Shish Tawook",
+    image: cardImg1,
+    descrip:"Chargrilled skewered chicken, Marinated in garlic, lemon, & oregano"
+  },
+  {
+    label: "Lamb Shawarma",
+    image: cardImg1,
+    descrip:"Tender & juicy chargrilled leg of lamb marinated in fresh herb,garlic & olive oil"
+  },
+  {
+    label: "Gyro",
+    image: cardImg1,
+    descrip:"Marinated beef in authentic seasoning before roasted to perfection"
+  },
+  {
+    label: "Kafta",
+    image: cardImg1,
+    descrip:"Chargrilled skewered ground beef with fresh herbs, onions & spices"
+  },
+  {
+    label:"Grilled Veggies",
+    image: cardImg1,
+    descrip:"Chargrilled skewered mushroom, onions, peppers, zucchini marinated in fresh herb, garlic & olive oil"
+  }
+];
+
 var cardArray = [
-  {category:'warm', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'warm', image:cardImg1, info:(<CardInfo title="Pita Wrap"
+    content="Grilled pita bread with hand cut fries, tomatoes, lettuce,
+    garlic aioli & your choice of protein or grilled veggies."
     price="$9.99"/>)},
-  {category:'warm', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'warm', image:cardImg1, info:(<CardInfo title="Rice Bowl"
+    content="A bowl filled with seasoned rice vermicelli, your choice of protein or
+    grilled veggies, lettuce, tomatoes, & garlic sauce"
     price="$9.99"/>)},
-  {category:'warm', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'warm', image:cardImg1, info:(<CardInfo title="Salad"
+    content="A bowl filled with vibrant salad, choice of protein or grilled veggies."
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'cold', image:cardImg1, info:(<CardInfo title="Hand Cut Fries"
+    content="Garlic & Herbs or Cajun"
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'cold', image:cardImg1, info:(<CardInfo title="Hummus"
+    content="A smooth blend of chickpeas, tahini & lemon juice."
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'cold', image:cardImg1, info:(<CardInfo title="Tabouli"
+    content="A mix of finely diced tomatoes, onions, parsley and crushed wheat with lemon juice & olive oil vinaigrette."
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'cold', image:cardImg1, info:(<CardInfo title="Fatoush"
+    content="A refreshing mix of fresh romaine lettuce, cucumber, tomatoes, fresh mint, and crispy pita croutons drizzled with lemon juice, olive oil and sumac vinaigrette "
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Item1"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'cold', image:cardImg1, info:(<CardInfo title="Side Salad"
+    content="Tossed salad with lettuce, tomatoes, cucumber and choice of homemade vinaigrette"
     price="$9.99"/>)},
   {category:'bev', image:cardImg1, info:(<CardInfo title="Item1"
     content="Aliquam aliquet faucibus massa,
@@ -110,7 +136,7 @@ function MenuGenerator(props) {
   )
 }
 export default function(props){
-  let bgStyle={ backgroundImage: 'url(' + bannerImg + ')'};
+  let bgStyle={backgroundImage: 'url(' + bannerImg + ')'};
   return (
     <div className="menu">
       <Banner image={bgStyle} name="Menu"
@@ -118,17 +144,20 @@ export default function(props){
               facebook.com/Zuzu<br/>
               instagram.com/Zuzu</h1>)}/>
       <AffixHeader affixOn={70} class="subheader row">
-        <Scroll to="warm">Warm Food</Scroll>
-        <Scroll to="cold">Cold Food</Scroll>
+        <Scroll to="warm">Classic Meals</Scroll>
+        <Scroll to="cold">Healthy Sides</Scroll>
         <Scroll to="bev">Beverages</Scroll>
       </AffixHeader>
-
-      <MenuGenerator title="Warm Food" info="Healthy comfort food with roasted,
+      <div className="protein-row">
+        {proteinArray.map(function(elem){
+            return(<ProteinCard label={elem.label} image={elem.image} descrip={elem.descrip}/>)
+          })}
+      </div>
+      <MenuGenerator title="Classic Meals" info="Healthy comfort food with roasted,
         warm ingredients, all made from scratch." category="warm" />
-      <MenuGenerator title="Cold Food" info="Made with fresh, organic produce
+      <MenuGenerator title="Healthy Sides" info="Made with fresh, organic produce
         that is locally sourced each season." category="cold" />
       <MenuGenerator title="Beverages" info="Drink Responsibly." category="bev" />
-
     </div>
   )
 }
