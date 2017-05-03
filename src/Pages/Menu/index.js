@@ -15,6 +15,8 @@ import tabouli from './assets/tabouli.png';
 import hummus from './assets/hummus.png';
 import fries from './assets/fries.png';
 import veggies from './assets/vegetables.png';
+import ice_tea from './assets/ice_tea.png';
+import green_tea from './assets/green_tea.png';
 
 
 function CardInfo(props){
@@ -73,35 +75,26 @@ var cardArray = [
     content="A bowl filled with seasoned rice vermicelli, your choice of protein or
     grilled veggies, lettuce, tomatoes, & garlic sauce"
     price="$9.99"/>)},
-  {category:'warm', image:cardImg1, info:(<CardInfo title="Salad"
-    content="A bowl filled with vibrant salad, choice of protein or grilled veggies."
-    price="$9.99"/>)},
+  // {category:'warm', image:cardImg1, info:(<CardInfo title="Salad"
+  //   content="A bowl filled with vibrant salad, choice of protein or grilled veggies."
+  //   price="$9.99"/>)},
   {category:'cold', image:hummus, info:(<CardInfo title="Hummus"
     content="A smooth blend of chickpeas, tahini & lemon juice."
     price="$9.99"/>)},
   {category:'cold', image:tabouli, info:(<CardInfo title="Tabouli"
     content="A mix of finely diced tomatoes, onions, parsley and crushed wheat with lemon juice & olive oil vinaigrette."
     price="$9.99"/>)},
-  {category:'cold', image:cardImg1, info:(<CardInfo title="Fatoush"
-    content="A refreshing mix of fresh romaine lettuce, cucumber, tomatoes, fresh mint, and crispy pita croutons drizzled with lemon juice, olive oil and sumac vinaigrette "
-    price="$9.99"/>)},
+  // {category:'cold', image:cardImg1, info:(<CardInfo title="Fatoush"
+  //   content="A refreshing mix of fresh romaine lettuce, cucumber, tomatoes, fresh mint, and crispy pita croutons drizzled with lemon juice, olive oil and sumac vinaigrette "
+  //   price="$9.99"/>)},
   {category:'cold', image:fries, info:(<CardInfo title="Hand Cut Fries"
     content="Garlic & Herbs or Cajun"
     price="$9.99"/>)},
-  {category:'bev', image:cardImg1, info:(<CardInfo title="Lemon Fresca"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'bev', image:ice_tea, info:(<CardInfo title="Ice Tea"
+    content="Cold brewed ice tea with a touch of lemon."
     price="$9.99"/>)},
-  {category:'bev', image:cardImg1, info:(<CardInfo title="Jasmine Green Tea"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
-    price="$9.99"/>)},
-  {category:'bev', image:cardImg1, info:(<CardInfo title="Matcha Fresca"
-    content="Aliquam aliquet faucibus massa,
-    nec aliquam tortor ullamcorper vel. Suspendisse
-    dapibus est at libero sollicitudin lacinia. Ut at finibus dolor."
+  {category:'bev', image:green_tea, info:(<CardInfo title="Jasmine Green Tea"
+    content="Refreshing green tea to brighten your day"
     price="$9.99"/>)},
 ];
 
